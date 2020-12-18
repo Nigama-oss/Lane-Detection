@@ -18,7 +18,7 @@ The gray-scale image image has only one pixel intensity value (0 or 1) compared 
 
 We do this by a method called 'Canny method' which comes with open CV. The resulting image is a gradient image which highlights only the edges, in which strong gradient represents a sharp change in color whereas small gradient represents a shallow change in color.
 
-![]([https://i.imgur.com/DmimzNo.png)
+![](https://i.imgur.com/DmimzNo.png)
 
 ### Region of interest
 
