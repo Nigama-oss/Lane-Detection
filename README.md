@@ -22,3 +22,31 @@ We do this by a method called 'Canny method' which comes with open CV. The resul
 
 ### Region of interest
 
+I picked the region of interest to be the right side of the lane in the image, as shown in the picture below.
+
+![](https://i.imgur.com/dXJbCZF.png)
+
+To isolate this region, we use matplotlib library to exactly spot the co-ordinates that give us the exact positions of the lane. The resulting image is the same as previous one, but is generated with X and Y axes.
+
+![](https://i.imgur.com/aQsC4mQ.png)
+
+The goal now, is to generate an image that is completely black with the same dimensions of our road image, and fill part of its area with a triangular polygon that isolates only the region of interest. 
+
+The image we get is a mask of the polygon with specified vertices from our original image.
+
+![](https://i.imgur.com/7mz0rJM.png)
+
+The above image is important to show only the specific region of our image. The remaining objects will be 'masked'. The next image will show only the areas traced by the polygon on the previous gradient image.
+
+![](https://i.imgur.com/wd2b04y.png)
+
+### Detecting lane lines
+
+To detect the lane line from our original image, we use a method called [hough transform](https://towardsdatascience.com/lines-detection-with-hough-transform-84020b3b1549) which helps us to identify identify the vertical lines from X and Y co-ordinates. 
+
+![](https://i.imgur.com/u7TR0hR.png)
+
+### Detecting lanes in video
+
+![](https://imgur.com/rnjZh5p)
+
