@@ -48,5 +48,13 @@ To detect the lane line from our original image, we use a method called [hough t
 
 ### Detecting lanes in video
 
-![](https://imgur.com/rnjZh5p)
+The same process is followed to detect lanes in a video. This is made easy by the 'VideoCapture' object by OpenCV. Thie object lets you read frame by frame and perform the operations that we need. 
+
+![](https://i.imgur.com/3xQxJDD.gif)
+
+## How to run
+
+- Clone this repository.
+- Install openCV from your terminal.
+- Run `lanes.py`.
 
