@@ -46,7 +46,7 @@ To detect the lane line from our original image, we use a method called [hough t
 
 ![](https://i.imgur.com/u7TR0hR.png)
 
-### Detecting lanes in video
+## Detecting lanes in video
 
 The same process is followed to detect lanes in a video. This is made easy by the 'VideoCapture' object by OpenCV. Thie object lets you read frame by frame and perform the operations that we need. 
 
